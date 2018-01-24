@@ -1,0 +1,2 @@
+class YoungAmericana < ApplicationRecord
+end

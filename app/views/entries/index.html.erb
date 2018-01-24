@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Period</th>
+      <th>Coding</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= entry.period %></td>
+        <td><%= entry.coding %></td>
+        <td><%= entry.description %></td>
+        <td style = "color: white;"><%= link_to 'Show', entry %></td>
+        <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+        <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entry', new_entry_path %>
+<style>
+a{
+  text-decoration: none;
+
+}
+
+th{
+  color: white;
+}
+td{
+  color: white;
+}
+</style>
+
+<div id = "abutton2">
+  <br>
+<a href="http://localhost:3000">Click for Dashboard</a>
+</div>
+
+<style>
+
+body{
+  background-color: green;
+  color: yellow;
+
+}
+a{
+  text-decoration: none;
+  color: yellow;
+  background-color: green;
+}
+</style>

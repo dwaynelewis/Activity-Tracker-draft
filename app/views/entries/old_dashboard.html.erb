@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LifeCoach</title>
+
+  </head>
+  <body>
+
+
+
+    <nav>
+    <h1>LifeCoach Dashboard</h1>
+
+    <div id="credits">
+      <h3>life management system</h3>
+
+    </div>
+    </nav>
+
+
+    <div class="content">
+      <div class="money">
+        <h2>money</h2>
+
+        <ul style="list-style-type:none">
+         <li class="cold">Rent: $1550</li>
+
+         <li class="cold">Bonnies: $65</li>
+
+         <li class="cold">Andrew: $100</li>
+         <li class="hot">Comcast: $265</li>
+         <li class="cold">FPL: $75</li>
+         <li class= "cold">LA Fitness: $30</li>
+         <li class="hot">Merchant Bank: $250</li>
+         <li class="cold">Climb:$340</li>
+         <li class="cold">Lexington Law: $25</li>
+         <li class="hot">Student Loan $50</li>
+         <li class="mild">AT&T: $150</li>
+         <li class= "mild">insurance: $225</li>
+
+
+     </ul>
+     <strong>TOTAL: $3125</strong>
+      </div>
+      <div class="learning">
+        <h4>learning</h4>
+
+        <a href="http://localhost:3000/entries">Daily Log Entries</a>
+
+
+      </div>
+      <div class="sexed">
+        <h2>Sex Ed.</h2>
+
+        <ul style="list-style-type:none">
+
+         <li class="hot">youngamericanasupplyusa.com shopify ssl certificate</li>
+         <li class="mild">write bio</li>
+
+
+      </div>
+      <div class="yas">
+        <h4>Young Americana</h4>
+
+      </div>
+
+
+
+
+
+
+
+    <div class ="girls">
+      <h2>girls</h2>
+    <p>Shortlist of Girls Cheatsheet:</p>
+       <ul style="list-style-type:none">
+        <li class ="hot">Anisa-dont be overeager</li>
+
+        <li class ="cold">Mauricia-call re CS</li>
+
+        <li class ="hot">Natasha-call mon for report</li>
+        <li class ="cold">Anne date 1/21-invite on</li>
+        <li class ="mild">Fallon-subdued date</li>
+        <li class ="hot">Vanessa-text hello and schedule inquiry</li>
+        <li class ="mild">Nathalie date-invite on</li>
+        <li class ="hot">Sandra-send IG memes</li>
+        <li class = "cold">Aleah-ask for a date</li>
+        <li class ="hot">Trudy-call mon</li>
+
+
+    </ul>
+    </div>
+    <div class="dada">
+      <h4>Dada</h4>
+
+      <li class="cold">send POA to taiwan</li>
+
+    </div>
+
+
+
+
+
+    </div>
+    <footer>
+  <a id="Tis" href ="Tislam.jpg">Tislam</a>
+    </footer>
+
+  </body>
+</html>
+
+    <style>
+
+html{
+  padding: 0px;
+}
+    body{
+      background-color: grey;
+      /*padding-right: : 50px;*/
+
+    }
+
+    nav{
+      background-color: royalblue;
+      width: 1230px;;
+      padding: 10px;
+      margin: 0px;
+      text-align: center;
+      color: white;
+}
+   .content{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-auto-rows: minmax(70px, auto);
+     grid-gap: 10px;
+    background-color: white;
+    padding: 25px;
+    width: 1200px;
+    color: grey;
+    text-align: center;
+    margin:0px;
+  }
+    div:nth-child(odd){
+      background: royalblue;
+      }
+      .money{
+        color: white;
+      }
+      .sexed{
+        color: white;
+      }
+   .learning{
+
+   }
+   /*.projects ul li{
+     color: black;
+   }*/
+   .yas{
+
+   }
+
+   .girls{
+     /*width: 200px;*/
+     /*background-color: black;*/
+     /*margin: auto;*/
+     text-align: center;
+     padding: 15px;
+     color: white;
+     /*grid-column: 2/3;*/
+   }
+   .dada{
+     color: grey;
+   }
+
+  .friends{
+
+
+  }
+
+  footer{
+    text-align: center;
+    background-color: royalblue;
+    padding: 15px;
+    width: 100%;
+  }
+
+    #credits{
+      color: white;
+    }
+
+    a{
+      text-decoration: none;
+      color: white;
+      /*background-color: green;*/
+      font-size: 150%;
+        border-bottom: 10px solid grey;
+
+    }
+
+    .label{
+      text-align: center;
+      color: white;
+      font-size: 107%;
+    }
+
+    #Tis{
+
+      /*display: block;*/
+      margin: auto;
+      width: 100px;
+      text-align: center;
+    }
+    h3{
+      font-family: cursive;
+      font-style: italic;
+      font-size: 30px;
+    }
+    h4{
+    /*color: white;*/
+    font-size: 20px;
+     }
+
+    </style>
+
+    <script>
+
+    const cold = document.getElementsByClassName('cold');
+
+    for (let i = 0; i < cold.length; i += 1){
+      cold[i].style.color = 'grey';
+    }
+
+    const hot = document.getElementsByClassName('hot');
+
+    for (let i = 0; i < hot.length; i += 1){
+      hot[i].style.color = 'white';
+    }
+
+    const mild = document.getElementsByClassName('mild');
+
+    for (let i = 0; i < mild.length; i += 1){
+      mild[i].style.color = 'red';
+    }
+
+    </script>

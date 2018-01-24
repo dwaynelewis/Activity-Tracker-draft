@@ -1,0 +1,2 @@
+class SexEd < ApplicationRecord
+end

@@ -1,0 +1,32 @@
+<%= form_with(model: sex_ed, local: true) do |form| %>
+  <% if sex_ed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sex_ed.errors.count, "error") %> prohibited this sex_ed from being saved:</h2>
+
+      <ul>
+      <% sex_ed.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Period %>
+    <%= form.date_select :Period, id: :sex_ed_Period %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Hours %>
+    <%= form.text_field :Hours, id: :sex_ed_Hours %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Description %>
+    <%= form.text_area :Description, id: :sex_ed_Description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

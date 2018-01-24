@@ -1,0 +1,32 @@
+<%= form_with(model: yas_task, local: true) do |form| %>
+  <% if yas_task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(yas_task.errors.count, "error") %> prohibited this yas_task from being saved:</h2>
+
+      <ul>
+      <% yas_task.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Period %>
+    <%= form.date_select :Period, id: :yas_task_Period %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Hours %>
+    <%= form.text_field :Hours, id: :yas_task_Hours %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Description %>
+    <%= form.text_area :Description, id: :yas_task_Description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

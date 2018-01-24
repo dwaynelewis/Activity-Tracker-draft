@@ -1,0 +1,2 @@
+class YasTask < ApplicationRecord
+end

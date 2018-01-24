@@ -1,0 +1,32 @@
+<%= form_with(model: young_americana, local: true) do |form| %>
+  <% if young_americana.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(young_americana.errors.count, "error") %> prohibited this young_americana from being saved:</h2>
+
+      <ul>
+      <% young_americana.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :period %>
+    <%= form.date_select :period, id: :young_americana_period %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hours %>
+    <%= form.text_field :hours, id: :young_americana_hours %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :young_americana_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

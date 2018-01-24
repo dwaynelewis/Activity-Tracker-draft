@@ -1,0 +1,32 @@
+<%= form_with(model: dada_task, local: true) do |form| %>
+  <% if dada_task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dada_task.errors.count, "error") %> prohibited this dada_task from being saved:</h2>
+
+      <ul>
+      <% dada_task.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Period %>
+    <%= form.date_select :Period, id: :dada_task_Period %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Hours %>
+    <%= form.text_field :Hours, id: :dada_task_Hours %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Description %>
+    <%= form.text_area :Description, id: :dada_task_Description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

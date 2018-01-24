@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Period:</strong>
+  <%= @sex_ed.Period %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @sex_ed.Hours %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sex_ed.Description %>
+</p>
+
+<%= link_to 'Edit', edit_sex_ed_path(@sex_ed) %> |
+<%= link_to 'Back', sex_eds_path %>

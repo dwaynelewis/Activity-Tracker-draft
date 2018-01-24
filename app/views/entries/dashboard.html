@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard </title>
+  </head>
+  <body>
+
+    <nav>
+    <h1>Personal Progress Tracker</h1>
+
+    <div id="credits">
+      <h3>a work management system</h3>
+
+    </div>
+    </nav>
+
+<div class="content">
+
+
+    <div class="cashflow">
+
+      <h5>Fixed Expenses</h5>
+      <ul style="list-style-type:none">
+       <li class="cold">Rent: $1550</li>
+
+       <li class="cold">Bonnies: $65</li>
+
+       <li class="cold">Andrew: $100</li>
+       <li class="hot">Comcast: $265</li>
+       <li class="cold">FPL: $75</li>
+       <li class= "cold">LA Fitness: $30</li>
+       <li class="hot">Merchant Bank: $250</li>
+       <li class="cold">Climb:$340</li>
+       <li class="cold">Lexington Law: $25</li>
+       <li class="hot">Student Loan $50</li>
+       <li class="mild">AT&T: $150</li>
+       <li class= "mild">insurance: $225</li>
+
+
+   </ul>
+   <h5>TOTAL: $3125</h5>
+    </div>
+    <div class="sexed">
+      <h6>SEX ED.</h6>
+
+      <!-- <h5>ToDo</h5> -->
+
+      <ul style="list-style-type:none">
+       <li class="bhot">signup to stimsocial</li>
+
+       <li class="hot">write bio & give to shaun for rewrite</li>
+       <li class="today">complete website design</li>
+       <li class="mild">SSL certificate</li>
+       <li class="today">bretts people name</li>
+       <li class="mild">design neck label</li>
+       <li class= "cold">find out how to attach neck label</li>
+       <li class="hot">Merchandising scheme chart</li>
+       <li class="hot">confirm starting designs</li>
+       <li class="hot">confirm starting bodies</li>
+       <li class="cold">get mauricias ideas for Rep group</li>
+        <li class="hot">design basic tee</li>
+
+        <br><br>
+        <a id="worklink" href="http://localhost:3000/sex_eds">Sex Ed Time Entries</a>
+
+    </div>
+    <div class="dada">
+      <h6>DADA</h6>
+
+
+
+      <ul style="list-style-type:none">
+       <li class="hot">review site design</li>
+
+       <li class="hot">remerchandise existing graphic designs</li>
+
+       <li class="hot">mailchimp</li>
+       <li class="hot">stimsocial</li>
+       <li class="cold">create basic tee</li>
+       <li class="hot">fix hat presentation</li>
+       <li class="hot">check shopping cart</li>
+
+       <br><br>
+       <a id="worklink" href="http://localhost:3000/dada_tasks">Dada Time Entries</a>
+
+    </div>
+    <div class="learn">
+      <h6>LEARN</h6>
+
+
+      <ul style="list-style-type:none">
+       <li class="today">Javascript client side</li>
+       <li class="today">finish CSS series</li>
+       <li class="cold">Active Record chaining models</li>
+
+       <li class="mild">BootStrap</li>
+       <li class="hot">Udemy digital marketing video</li>
+       <li class="hot">SEO optimization</li>
+
+<br><br>
+<a id="learnlink" href="http://localhost:3000/entries">Daily Log Entries</a>
+    </div>
+    <div class="yas">
+      <h6>YOUNG AMERICANA</h6>
+
+
+      <ul style="list-style-type:none">
+       <li class="hot">set up shopping cart</li>
+
+       <li class="hot">youngamericanasupplyusa.com</li>
+
+       <li class="mild">SSL certiificate</li>
+       <li class="hot">edit video for IG</li>
+       <li class="mild">choose pics to advertise</li>
+       <li class= "today">place wipe order</li>
+       <li class="cold">get shoe cleaner stock</li>
+       <li class= "mild">review Amazon status</li>
+       <li class="mild">review Ebay status</li>
+
+
+       <br><br>
+       <a id="worklink" href="http://localhost:3000/young_americanas">YAS Time Entries</a><br>
+
+    </div>
+  </div>
+  <footer>
+<a id="Tis" href ="Tislam.jpg">Tislam</a>
+  </footer>
+
+
+  <style>
+
+  nav{
+    background-color: snow;
+    width: 1207px;;
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+    color: #3bbced;
+    border: 10px solid #3bbced;
+}
+
+.content{
+  font-family: 'Nunito Semibold';
+  background-color: snow;
+  /*height: 1000px;*/
+  width: 1230px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100%, auto);
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+
+.cashflow{
+  background-color: #777;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.sexed{
+  background-color:  #3bbced;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.dada{
+  background-color:  #3bbced;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.learn{
+  display: block;
+  background-color: white;
+  color: navy;
+  grid-column-start: ;
+  grid-column-end: ;
+  grid-row-start: ;
+  grid-row-end: ;
+
+  /*border-top:   10px solid #3bbced;
+  border-left:   10px solid #777;
+  border-bottom: 10px solid #3bbced;
+  border-right: 10px solid #777;*/
+}
+
+.learn ul{
+  margin-right: 20px;
+}
+
+.learn a{
+  border-bottom: 10px solid #3bbced;
+  color: #3bbced;
+}
+
+#worklink{
+  color: white;
+}
+#learnlink{
+  color: #3bbced;
+}
+.yas{
+  background-color: #777;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  /*background-color: green;*/
+  font-size: 150%;
+    border-bottom: 10px solid white;
+}
+h5{
+  font-size: 110%;
+  text-decoration: line-through;
+}
+
+h6{
+  font-size: 110%;
+}
+footer{
+  text-align: center;
+  border: 10px solid #777;
+  padding: 15px;
+  width: 1206px;
+  margin: 10px 0px 0px 0px;
+}
+
+  #credits{
+    color: #3bbced;
+  }
+
+  li{
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  h1{
+    background-color: #3bbced;
+    color: white;
+    width: 300px;
+    padding: 10px;
+    margin-left: 445px;
+
+  }
+
+  </style>
+  </body>
+</html>
+
+<script>
+
+const cold = document.getElementsByClassName('cold');
+
+for (let i = 0; i < cold.length; i += 1){
+  cold[i].style.color = 'black';
+}
+
+const hot = document.getElementsByClassName('hot');
+
+for (let i = 0; i < hot.length; i += 1){
+  hot[i].style.color = 'white';
+}
+
+const mild = document.getElementsByClassName('mild');
+
+for (let i = 0; i < mild.length; i += 1){
+  mild[i].style.color = 'red';
+}
+
+</script>

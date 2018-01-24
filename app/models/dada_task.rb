@@ -1,0 +1,2 @@
+class DadaTask < ApplicationRecord
+end

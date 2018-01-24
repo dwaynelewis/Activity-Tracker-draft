@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Period:</strong>
+  <%= @entry.period %>
+</p>
+
+<p>
+  <strong>Coding:</strong>
+  <%= @entry.coding %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @entry.description %>
+</p>
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>
+
+
+<style>
+
+body{
+  background-color: green;
+  color: white;
+
+}
+a{
+  text-decoration: none;
+  color: white;
+  background-color: green;
+}
+
+
+</style>

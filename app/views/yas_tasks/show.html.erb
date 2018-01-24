@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Period:</strong>
+  <%= @yas_task.Period %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @yas_task.Hours %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @yas_task.Description %>
+</p>
+
+<%= link_to 'Edit', edit_yas_task_path(@yas_task) %> |
+<%= link_to 'Back', yas_tasks_path %>

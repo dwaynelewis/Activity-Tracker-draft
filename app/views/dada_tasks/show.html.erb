@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Period:</strong>
+  <%= @dada_task.Period %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @dada_task.Hours %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @dada_task.Description %>
+</p>
+
+<%= link_to 'Edit', edit_dada_task_path(@dada_task) %> |
+<%= link_to 'Back', dada_tasks_path %>
